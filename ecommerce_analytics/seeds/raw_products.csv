@@ -1,0 +1,21 @@
+product_id,sku,product_name,description,category_id,brand_id,supplier_id,price,cost,weight_kg,is_active,created_at,updated_at
+1,SKU-000001,Mini Set 1,Detailed description of product 1,10,12,8,316.75,186.88,33,false,2022-05-15,2024-11-23
+2,SKU-000002,Super Device 2,Detailed description of product 2,7,7,4,410.09,200.94,37.7,true,2023-02-14,2024-04-13
+3,SKU-000003,Ultra Widget 3,Detailed description of product 3,5,12,4,402.34,253.47,15.5,false,2022-06-10,2024-01-29
+4,SKU-000004,Super Tool 4,Detailed description of product 4,5,1,2,469.13,253.33,21.2,true,2023-08-25,2025-10-15
+5,SKU-000005,Basic Gadget 5,Detailed description of product 5,8,4,8,10.76,6.99,24.3,true,2023-08-29,2025-09-09
+6,SKU-000006,Ultra Gear 6,Detailed description of product 6,7,15,6,374.43,168.49,30.6,true,2022-08-18,2024-02-08
+7,SKU-000007,Mini Device 7,Detailed description of product 7,6,9,7,161.34,96.8,3,true,2023-06-20,2025-09-27
+8,SKU-000008,Max Set 8,Detailed description of product 8,4,13,3,190.03,125.42,43.6,true,2023-05-15,2024-03-02
+9,SKU-000009,Max Gear 9,Detailed description of product 9,2,9,8,85.95,37.82,12,true,2022-09-08,2025-07-11
+10,SKU-000010,Basic Set 10,Detailed description of product 10,1,9,4,394.38,264.23,30.8,true,2023-09-27,2025-02-17
+11,SKU-000011,Max Set 11,Detailed description of product 11,9,4,7,7.71,3.32,18.7,true,2023-04-04,2024-12-29
+12,SKU-000012,Premium Kit 12,Detailed description of product 12,10,13,3,405,271.35,17,true,2023-02-28,2025-02-06
+13,SKU-000013,Pro Gear 13,Detailed description of product 13,2,6,2,162.36,71.44,50,true,2022-12-20,2025-05-03
+14,SKU-000014,Basic Set 14,Detailed description of product 14,2,6,8,355.2,209.57,30.1,true,2023-01-06,2024-11-09
+15,SKU-000015,Mini Device 15,Detailed description of product 15,8,5,3,187.47,131.23,24.1,true,2023-12-31,2025-03-17
+16,SKU-000016,Ultra Gadget 16,Detailed description of product 16,6,9,2,238.42,100.14,33.5,false,2023-01-15,2024-10-11
+17,SKU-000017,Mini Product 17,Detailed description of product 17,2,5,5,225.21,112.61,23.9,true,2022-01-19,2025-06-16
+18,SKU-000018,Mega Item 18,Detailed description of product 18,3,7,6,302.65,178.56,27.3,true,2022-04-09,2024-10-24
+19,SKU-000019,Smart Device 19,Detailed description of product 19,9,2,2,374.83,149.93,35.4,false,2023-01-23,2025-11-09
+20,SKU-000020,Ultra Widget 20,Detailed description of product 20,9,10,3,296.49,189.75,48.2,true,2022-01-12,2025-01-26

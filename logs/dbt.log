@@ -1,0 +1,30 @@
+[0m01:10:51.293733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027665E9EA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027665E9C550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027665B54290>]}
+
+
+============================== 01:10:51.316830 | 3b69ab87-5dfa-4530-bb6d-de490c5e7e9f ==============================
+[0m01:10:51.316830 [info ] [MainThread]: Running with dbt=1.11.2
+[0m01:10:51.316830 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'invocation_command': 'dbt init ecommerce_analytics', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:10:51.348891 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Lenovo\.dbt
+[0m01:10:51.356692 [debug] [MainThread]: Starter project path: C:\Users\Lenovo\Desktop\Proyectos\dbt-proyect\venv\Lib\site-packages\dbt\include\starter_project
+[0m01:10:51.509053 [info ] [MainThread]: 
+Your new dbt project "ecommerce_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:10:51.509053 [info ] [MainThread]: Setting up your profile.
+[0m01:11:02.034206 [info ] [MainThread]: Profile ecommerce_analytics written to C:\Users\Lenovo\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m01:11:02.034206 [debug] [MainThread]: Command `dbt init` succeeded at 01:11:02.034206 after 10.84 seconds
+[0m01:11:02.034206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002765F204B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002765F204ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002765F204C90>]}
+[0m01:11:02.034206 [debug] [MainThread]: Flushing usage events
+[0m01:11:03.479315 [debug] [MainThread]: An error was encountered while trying to flush usage events

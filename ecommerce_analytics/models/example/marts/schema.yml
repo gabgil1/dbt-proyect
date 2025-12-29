@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: |
+      Fact table for orders.
+      
+      **Grain**: One row per order.
+      
+      **Usage**: Sales analysis, revenue tracking, customer behavior insights.
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Foreign key referencing customers"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: promotion_id
+        description: "Promotion applied to the order (if any)"
+      - name: total_amount
+        description: "Total amount of the order"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: order_tier
+        description: |
+          Classification of the order by value:
+          - High Value: > $1000
+          - Medium Value: $500–$1000
+          - Low Value: < $500
+
+  - name: dim_customers
+    description: |
+      Dimension table for customers.
+      
+      **Grain**: One row per customer.
+      
+      **Usage**: Segmentation, marketing analysis, customer profiling.
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: customer_name
+        description: "Full name of the customer"
+      - name: customer_email
+        description: "Customer email address"
+        tests:
+          - unique
+          - not_null
+      - name: customer_city
+        description: "City of residence"
+
+  - name: dim_products
+    description: |
+      Dimension table for products.
+      
+      **Grain**: One row per product.
+      
+      **Usage**: Product catalog analysis, pricing, category insights.
+    columns:
+      - name: product_id
+        description: "Unique identifier for the product"
+        tests:
+          - unique
+          - not_null
+      - name: product_name
+        description: "Name of the product"
+      - name: category
+        description: "Product category"
+      - name: price
+        description: "Sales price of the product"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: cost
+        description: "Cost of the product"
