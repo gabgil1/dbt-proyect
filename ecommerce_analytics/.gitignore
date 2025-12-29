@@ -1,3 +1,6 @@
 venv/
-*.duckdb
+dbt_packages/
 target/
+*.duckdb
+__pycache__/
+*.pyc
